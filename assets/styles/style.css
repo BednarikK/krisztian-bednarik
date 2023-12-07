@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+body {
+    width: 100%;
+    color: #111111;
+}
+
+header, main, footer {
+    width: 100%;
+}
+
+p, h1, h2, h3 {
+    margin: 0 0 1rem 0;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 3;
+}
+
+.navbar-item {
+    text-decoration: none;
+}
+
+.section {
+    height: 100vh;
+    background-color: #3D3D3D;
+}
+
+.section:nth-child(1) {
+    background-color: #EEEEEE;
+    position: relative;
+}
+
+.section:nth-child(2) {
+    z-index: 1;
+    position: relative;
+}
+
+.profile-image-container {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.profile-image {
+    max-height: 100%;
+    position: relative;
+    top: 1px;
+}
+
+.full-name-container {
+    height: 30%;
+    background-color: #3D3D3D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 12px #000000;
+    /* z-index: 1; */
+    position: relative;
+}
+
+.full-name {
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.first-name, .last-name, .profession {
+    height: min-content;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.first-name {
+    font-size: 1rem;
+    top: calc(40% - 2.5rem);
+}
+
+.last-name {
+    font-size: 3rem;
+    top: calc(40% - 2rem);
+}
+
+.profession {
+    font-size: 1rem;
+    border-top: 1px solid #FFFFFF;
+    top: calc(40% + 1rem);
+    width: 304px;
+    margin: 0 auto;
+}
+
+.platform-icons-container {
+    display: flex;
+    padding: 12px 0;
+}
+
+.platform-icon {
+    margin: 0 0.4rem;
+    height: 1.4rem;
+    text-decoration: none;
+}
+
+.about-me-container {
+    width: 304px;
+    border-top: 1px solid #111111;
+    border-bottom: 1px solid #111111;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+.landscape-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    padding: 12px;
+}
+
+.landscape {
+    margin: 12px 0;
+    height: 100%;
+}
